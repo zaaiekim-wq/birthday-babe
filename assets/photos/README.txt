@@ -1,0 +1,1 @@
+Ganti foto di folder ini dengan foto-1.jpg, foto-2.jpg, foto-3.jpg.

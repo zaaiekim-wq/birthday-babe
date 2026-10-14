@@ -1,0 +1,1 @@
+Taruh lagu MP3 bernama lagu-kamu.mp3 di folder ini.

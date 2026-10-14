@@ -1,0 +1,222 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#331122"><title>A Little Something for You</title><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><div class="ambient"></div><div id="petals"></div><audio id="music" src="assets\music\music.mp3" loop></audio><button class="music" id="musicBtn"><span class="note">♪</span> <small id="musicLabel">MUSIC OFF</small></button>
+
+<div class="loader-overlay" id="loaderOverlay">
+  <div class="load-flowers">
+    <span>🌸</span><span>🌼</span><span>🌺</span><span>✿</span><span>🌷</span>
+  </div>
+  <div class="loader"><i></i><i></i><i></i><i></i><b></b></div>
+  <p>Preparing something special for you...</p>
+</div>
+
+<main class="scroll-wrap">
+
+  <section class="section envelope-section" id="envelope">
+    <p class="eyebrow">— PRESS THE ENVELOPE —</p>
+    <button class="env" id="openEnv" aria-label="Buka amplop">
+      <span class="glow"></span>
+      <span class="peek">for you, with love <b>♡</b></span>
+      <span class="back"></span>
+      <span class="front"></span>
+      <span class="flap"></span>
+      <span class="seal">♥</span>
+    </button>
+    <p class="hint">Tap the envelope to open</p>
+    <div class="scroll-hint"><span>scroll ↓</span></div>
+  </section>
+
+  <section class="section birthday-section" id="birthday">
+    <div class="float-flowers">
+      <span>🌸</span><span>🌼</span><span>🌺</span><span>🌷</span><span>✿</span>
+    </div>
+    <p class="eyebrow">✿ &nbsp; YOUR SPECIAL DAY &nbsp; ✿</p>
+    <h2>Happy<br><em>Birthday</em><br><span id="name1">Beautiful Soul</span></h2>
+    <div class="line"></div>
+    <p class="date" id="date">JUNE 10 &nbsp;·&nbsp; THE MOST SPECIAL DAY</p>
+    <div class="collage">
+      <figure class="polaroid p1"><img src="assets/photos/pacar-1.jpeg" alt="Foto kenangan pertama"><figcaption>my favorite♡</figcaption></figure>
+      <figure class="polaroid p2"><img src="assets/photos/pacar-2.jpeg" alt="Foto kenangan kedua"><figcaption>you & the first flowers from me</figcaption></figure>
+      <figure class="polaroid p3"><img src="assets/photos/pacar-3.jpeg" alt="Foto kenangan ketiga"><figcaption>the first time i saw your face</figcaption></figure>
+      <span class="heart h1">♡</span>
+      <span class="heart h2">♥</span>
+    </div>
+    <p class="tiny">there's something I want you to read</p>
+  </section>
+
+  <section class="section letter-section" id="letter">
+    <p class="eyebrow">— FROM MY HEART —</p>
+    <h2>A Letter <em>For You</em></h2>
+    <article class="paper">
+      <div class="decor">✿　✧　✿</div>
+      <p class="ldate" id="ldate">June 10</p>
+      <div class="rule"><span>✿</span><span class="dash"></span><span>✿</span></div>
+      <h3>My dearest <span id="name2">Beautiful Soul</span>,</h3>
+      <p id="letterCopy" class="copy"></p>
+      <span id="cursor">|</span>
+      <blockquote id="ps">P.S. — I will always be here for you, today, tomorrow, and forever. ♡</blockquote>
+      <p class="signoff">With all my love, <span>♡</span></p>
+    </article>
+  </section>
+
+  <section class="section scrapbook-section" id="scrapbook">
+        <p class="eyebrow">— A LITTLE GALLERY OF MY LOVE —</p>
+    <h2>My <em>Cutie</em></h2>
+    <p class="subtitle">Some moments deserve to stay forever.</p>
+    <div class="scrapbook-stage">
+      <!-- 3D Bubble "LOVE" text -->
+      <div class="sb-love-bubble" aria-label="LOVE">
+        <span class="bubble-char c-l">L</span>
+        <span class="bubble-char c-o">O</span>
+        <span class="bubble-char c-v">V</span>
+        <span class="bubble-char c-e">E</span>
+      </div>
+
+      <!-- Top-Left Polaroid Photo -->
+      <figure class="sb-polaroid" id="sbPolaroid" title="Foto Kenangan">
+        <div class="sb-polaroid-inner">
+          <img src="assets/photos/pacar-4.jpeg" alt="Polaroid photo">
+        </div>
+      </figure>
+
+      <!-- Top-Right Glowing Heart Photo Frame -->
+      <div class="sb-heart-frame" id="sbHeartFrame" title="Foto Bersama">
+        <svg class="sb-heart-glow-svg" viewBox="0 0 160 150">
+          <defs>
+            <filter id="sbHeartGlow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur1" />
+              <feGaussianBlur in="SourceGraphic" stdDeviation="14" result="blur2" />
+              <feGaussianBlur in="SourceGraphic" stdDeviation="24" result="blur3" />
+              <feMerge>
+                <feMergeNode in="blur3" />
+                <feMergeNode in="blur2" />
+                <feMergeNode in="blur1" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+            <clipPath id="sbHeartClip">
+              <path d="M 80,135 C 25,95 5,60 5,35 C 5,14 21,3 42,3 C 58,3 72,12 80,25 C 88,12 102,3 118,3 C 139,3 155,14 155,35 C 155,60 135,95 80,135 Z" />
+            </clipPath>
+          </defs>
+          <!-- Glowing pink aura -->
+          <path class="sb-heart-aura" fill="#F4A8C0" d="M 80,135 C 25,95 5,60 5,35 C 5,14 21,3 42,3 C 58,3 72,12 80,25 C 88,12 102,3 118,3 C 139,3 155,14 155,35 C 155,60 135,95 80,135 Z" filter="url(#sbHeartGlow)" />
+          <!-- Clipped Photo -->
+          <g clip-path="url(#sbHeartClip)">
+            <image href="assets/photos/pacar7.png" x="-8%" y="0" width="180" height="120" preserveAspectRatio="xMidYMid slice" />
+          </g>
+          <!-- Glowing stroke outline -->
+          <path class="sb-heart-stroke" stroke="#F4A8C0" stroke-width="3.5" fill="none" d="M 80,135 C 25,95 5,60 5,35 C 5,14 21,3 42,3 C 58,3 72,12 80,25 C 88,12 102,3 118,3 C 139,3 155,14 155,35 C 155,60 135,95 80,135 Z" />
+        </svg>
+      </div>
+
+      <!-- Floating Neon Pink Hearts -->
+      <div class="sb-neon-hearts">
+        <svg class="sb-neon-h1" viewBox="0 0 50 45">
+          <path d="M 25,40 C 10,28 2,18 2,10 C 2,4 7,1 13,1 C 18,1 22,4 25,8 C 28,4 32,1 37,1 C 43,1 48,4 48,10 C 48,18 40,28 25,40 Z" fill="none" stroke="#F4A8C0" stroke-width="2.5" />
+        </svg>
+        <svg class="sb-neon-h2" viewBox="0 0 50 45">
+          <path d="M 25,40 C 10,28 2,18 2,10 C 2,4 7,1 13,1 C 18,1 22,4 25,8 C 28,4 32,1 37,1 C 43,1 48,4 48,10 C 48,18 40,28 25,40 Z" fill="none" stroke="#F4A8C0" stroke-width="2.5" />
+        </svg>
+        <svg class="sb-neon-h3" viewBox="0 0 50 45">
+          <path d="M 25,40 C 10,28 2,18 2,10 C 2,4 7,1 13,1 C 18,1 22,4 25,8 C 28,4 32,1 37,1 C 43,1 48,4 48,10 C 48,18 40,28 25,40 Z" fill="none" stroke="#F4A8C0" stroke-width="2" />
+        </svg>
+      </div>
+
+      <!-- Center Envelope & Torn Paper Card -->
+      <div class="sb-envelope-card">
+        <!-- Envelope Backing in soft pink/rose -->
+        <div class="sb-env-backing">
+          <div class="sb-env-pocket"></div>
+          <!-- Circular date badge -->
+          <div class="sb-date-badge" id="sbDateBadge">
+            <span>07.07.26</span>
+          </div>
+        </div>
+
+        <!-- Ripped / Torn Paper Card with "Happy Birthday" -->
+        <div class="sb-torn-paper">
+          <span class="sb-hbd-script">Happy<br>Birthday</span>
+        </div>
+      </div>
+
+      <!-- 3-Cut Photobooth Strip (Life4Cuts Style) -->
+      <figure class="sb-photostrip" id="sbPhotostrip" title="Photostrip Kenangan">
+        <div class="sb-strip-slot"><img src="assets/photos/pacar-8.jpeg" alt="Photostrip 1"></div>
+        <div class="sb-strip-slot"><img src="assets/photos/pacar-6.jpeg" alt="Photostrip 2"></div>
+        <div class="sb-strip-slot"><img src="assets/photos/pacar-5.jpeg" alt="Photostrip 3"></div>
+      </figure>
+
+      <!-- Glossy 3D Pink Balloon Hearts & Decorations -->
+      <div class="sb-blue-hearts">
+        <!-- Chain of small puffy pink hearts on strip edge -->
+        <div class="sb-heart-chain">
+          <span class="puffy-heart ph1">💖</span>
+          <span class="puffy-heart ph2">💖</span>
+          <span class="puffy-heart ph3">💖</span>
+        </div>
+
+        <!-- Big 3D glossy pink balloon heart -->
+        <div class="sb-big-blue-heart">
+          <svg viewBox="0 0 100 95" class="glossy-heart-svg">
+            <defs>
+              <radialGradient id="glossyPinkGrad" cx="35%" cy="30%" r="70%">
+                <stop offset="0%" stop-color="#fff0f5" />
+                <stop offset="35%" stop-color="#f4a8c0" />
+                <stop offset="75%" stop-color="#e879a0" />
+                <stop offset="100%" stop-color="#8a2548" />
+              </radialGradient>
+              <filter id="heartShadow" x="-30%" y="-30%" width="160%" height="160%">
+                <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.6"/>
+              </filter>
+            </defs>
+            <path d="M 50,88 C 15,62 0,38 0,22 C 0,9 10,0 23,0 C 33,0 43,6 50,15 C 57,6 67,0 77,0 C 90,0 100,9 100,22 C 100,38 85,62 50,88 Z" fill="url(#glossyPinkGrad)" filter="url(#heartShadow)" />
+            <ellipse cx="30" cy="22" rx="14" ry="7" transform="rotate(-30 30 22)" fill="#ffffff" opacity="0.45" />
+          </svg>
+        </div>
+
+        <!-- Concentric glowing pink hearts bottom-right -->
+        <div class="sb-concentric-hearts">
+          <span class="c-heart ch1">💖</span>
+          <span class="c-heart ch2">💖</span>
+          <span class="c-heart ch3">💖</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gift-section" id="gift">
+    <div class="gift-sparkles-wrap">
+      <span class="g-sparkle sp1">✨</span>
+      <span class="g-sparkle sp2">✨</span>
+      <span class="g-sparkle sp3">✨</span>
+      <span class="g-sparkle sp4">✨</span>
+    </div>
+    <p class="gift-eyebrow">✨ Opening your gift... ✨</p>
+    <h2 class="gift-title">A Special <em>Surprise</em></h2>
+    <p class="gift-hint">Ketuk kotak kado di bawah untuk membuka hadiahmu 🎁</p>
+
+    <!-- The Pink & Yellow Gift Box (Image 2 style) -->
+    <a href="gift.html" class="gift-box-btn" id="giftBoxBtn" aria-label="Buka Kado Spesial">
+      <div class="gift-box-3d" id="giftBox3D">
+        <!-- Gift Box Lid -->
+        <div class="gift-lid-wrap">
+          <div class="gift-bow-group">
+            <div class="bow-loop-l"></div>
+            <div class="bow-loop-r"></div>
+            <div class="bow-center"></div>
+          </div>
+          <div class="gift-lid-base">
+            <div class="lid-ribbon-h"></div>
+          </div>
+        </div>
+        <!-- Gift Box Body -->
+        <div class="gift-body-base">
+          <div class="body-ribbon-v"></div>
+          <div class="body-ribbon-h"></div>
+        </div>
+      </div>
+      <span class="gift-click-pill">Buka Kado & Lihat Bunga 🌸</span>
+    </a>
+  </section>
+
+</main>
+
+<script src="script.js"></script></body></html>
